@@ -279,6 +279,7 @@ Navbar
 .nav-links {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .nav-link {
   display: block;
@@ -291,9 +292,35 @@ Navbar
   padding: 1rem 0;
   border-top: var(--primary) solid 1px;
   transition: var(--transition);
+  margin-bottom: 0.25rem;
 }
 .nav-link:hover {
   text-shadow: 3px 3px black;
+}
+.MainPage {
+  background-color: red;
+}
+.MainPageFooter {
+  height: 4rem;
+  text-align: center;
+  background-color: var(--coffeeBrown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo > img {
+  position: absolute;
+  width: 8rem;
+
+  display: flex;
+  top: -42px;
+  right: -5px;
+}
+.footer-logo {
+  position: relative;
+}
+.date {
+  margin-right: 8rem;
 }
 
 @media screen and (min-width: 992px) {
