@@ -295,3 +295,37 @@ Navbar
 .nav-link:hover {
   text-shadow: 3px 3px black;
 }
+
+@media screen and (min-width: 992px) {
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+  .nav-header {
+    height: auto;
+    margin-right: 2rem;
+  }
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    border: transparent;
+    background: transparent;
+    margin-right: 3rem;
+  }
+  .contact-link {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .contact-link > a {
+    background-color: var(--secondary);
+  }
+}
