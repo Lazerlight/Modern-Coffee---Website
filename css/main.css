@@ -304,6 +304,9 @@ Navbar
   height: 4rem;
   text-align: center;
   background-color: var(--coffeeBrown);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,4 +358,14 @@ Navbar
   .contact-link > a {
     background-color: var(--secondary);
   }
+}
+.MainHeader {
+  color: white;
+  font-style: italic;
+  height: 40vh;
+  background: url(/assets/logoCoffee.png) center no-repeat;
+  margin-bottom: 2rem;
+  border-radius: var(--borderRadius);
+  position: relative;
+  text-align: center;
 }
