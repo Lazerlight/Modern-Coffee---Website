@@ -297,9 +297,6 @@ Navbar
 .nav-link:hover {
   text-shadow: 3px 3px black;
 }
-.MainPage {
-  background-color: red;
-}
 .MainPageFooter {
   height: 4rem;
   text-align: center;
@@ -342,6 +339,7 @@ Navbar
     margin-right: 2rem;
   }
   .nav-links {
+    margin-top: 1.5rem;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -363,9 +361,20 @@ Navbar
   color: white;
   font-style: italic;
   height: 40vh;
-  background: url(/assets/logoCoffee.png) center no-repeat;
+  background: url(/assets/MainHeaderIMG.jpg) center no-repeat scroll;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   position: relative;
   text-align: center;
+}
+.MainHeader-Container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
