@@ -122,9 +122,9 @@ ul {
 }
 
 .img {
-  width: 100%;
-  display: block;
   object-fit: cover;
+  display: block;
+  width: 100%;
 }
 /* buttons */
 
