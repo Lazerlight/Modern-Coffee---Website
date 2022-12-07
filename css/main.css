@@ -345,7 +345,31 @@ Navbar
 }
 .Drinks-Container {
   margin: 1rem 1rem;
+  gap: 2rem 1rem;
+  display: grid;
 }
+.drinks-List {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 3rem;
+}
+.SingleDrink {
+  display: block;
+}
+.drink-img {
+  margin-bottom: 1rem;
+  border-radius: var(--borderRadius);
+}
+.SingleDrink h5,
+p {
+  color: var(--secondary);
+  margin-bottom: 0;
+  line-height: 1;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Media Queries */
 @media screen and (min-width: 992px) {
   .nav-btn {
     display: none;
