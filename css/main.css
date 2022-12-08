@@ -331,6 +331,7 @@ Navbar
   position: relative;
   text-align: center;
   margin: 1rem 1rem;
+  margin-bottom: 2rem;
 }
 .MainHeader-Container {
   position: absolute;
@@ -414,5 +415,30 @@ p {
   }
   .nav-header {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 576px) {
+  .drinks-List {
+    grid-template-columns: 1fr 1fr;
+  }
+  .drink-img {
+    height: 15rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .drink-img {
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .drinks-List {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .SingleDrink h5 {
+    font-size: 1.25rem;
+  }
+  .drink-img {
+    object-fit: cover;
+    height: 25rem;
   }
 }
