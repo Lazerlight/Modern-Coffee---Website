@@ -322,10 +322,10 @@ Navbar
   margin-right: 8rem;
 }
 .MainHeader {
-  color: white;
+  background: url(../assets/MhIMG.jpg) center no-repeat;
+  color: rgb(199, 123, 25);
   font-style: italic;
   height: 40vh;
-  background: url(/assets/MainHeaderIMG.jpg) center no-repeat scroll;
   margin-bottom: 2rem;
   border-radius: var(--borderRadius);
   position: relative;
