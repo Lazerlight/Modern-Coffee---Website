@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 } /*16px*/
 
 :root {
@@ -178,21 +179,21 @@ ul {
 .form {
   width: 90vw;
   max-width: var(--fixed-width);
-  background: var(--white);
+  background: var(--primary);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;
   margin: 3rem auto;
 }
-.form-label {
+.formLabel {
   display: block;
-  font-size: var(--smallText);
+  font-size: small;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
-.form-input,
-.form-textarea {
+.formInput,
+.formTXT {
   width: 100%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--borderRadius);
@@ -200,18 +201,18 @@ ul {
   border: 1px solid var(--grey-200);
 }
 
-.form-row {
+.formRow {
   margin-bottom: 1rem;
 }
 
-.form-textarea {
+.formTXT {
   height: 7rem;
 }
 ::placeholder {
   font-family: inherit;
   color: var(--grey-400);
 }
-.form-alert {
+.formAlert {
   color: var(--red-dark);
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
@@ -385,6 +386,14 @@ p {
   height: 30rem;
   max-width: 780px;
 }
+.contactPage {
+  justify-content: center;
+  text-align: center;
+  display: grid;
+}
+.contactFormBTN {
+  background-color: var(--secondary);
+}
 /* Media Queries */
 @media screen and (min-width: 992px) {
   .aboutPage {
@@ -395,7 +404,18 @@ p {
   .aboutIMG {
     height: 100%;
   }
-
+  .contactPage {
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40rem;
+    align-items: center;
+  }
+  .contactInfo {
+    margin: 1rem;
+  }
+  .contactForm {
+    margin-right: 1rem;
+  }
   .nav-btn {
     display: none;
   }
@@ -457,6 +477,12 @@ p {
 @media screen and (min-width: 1200px) {
   .drinks-List {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contactInfo {
+    margin: 8rem;
+  }
+  .contactForm {
+    margin-right: 8rem;
   }
   .SingleDrink h5 {
     font-size: 1.25rem;

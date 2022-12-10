@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Coffee || Contacts</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+        .MainPageFooter {
+            position: absolute;
+        }
+
+        @media screen and (max-width: 992px) {
+            .MainPageFooter {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start of Nav bar -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <!-- Header -->
+            <div class="nav-header">
+                <a href="./index.html"> <img src="./assets/logoCoffee.png" alt="Logo"></a>
+                <button type="button" class="btn nav-btn"><i class="fas fa-align-justify"></i></button>
+            </div>
+            <!-- Links -->
+            <div class="nav-links">
+                <div class="nav-link">
+                    <a href="./index.html" class="btn">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="./about.html" class="btn">About</a>
+                </div>
+                <div class="nav-link">
+                    <a href="./drinks.html" class="btn">Drinks</a>
+                </div>
+                <div class="nav-link contact-link">
+                    <a href="./contact.html" class="btn">Contacts</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End of Nav bar -->
+
+    <!-- Start of Main element -->
+    <main class="MainPage">
+
+        <!-- Start of Main element -->
+        <main class="MainPage">
+            <!-- Contact page section -->
+            <section class="contactPage">
+                <article class="contactInfo">
+                    <h3>We'd love to hear from you</h3>
+                    <p>If you got very creative idea on how we can improve the site or by any chance you've got an
+                        interesting original way of preparing coffee we'd love if you share it with us! Just fill
+                        the form below and wait for our team to reply to you by email.</p>
+                </article>
+                <!-- Contact Form -->
+                <article>
+                    <form class="form contactForm">
+                        <!-- Row - Name-->
+                        <div class="formRow">
+                            <label for="name" class="formLabel">Name:</label>
+                            <input type="text" name="name" id="name" class="formInput">
+                        </div>
+                        <!-- Row - Email-->
+                        <div class="formRow">
+                            <label for="email" class="formLabel">Email:</label>
+                            <input type="email" name="email" id="email" class="formInput">
+                        </div>
+                        <!-- Row - Message-->
+                        <div class="formRow">
+                            <label for="name" class="formLabel">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="formTXT"></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-block contactFormBTN">Send Message</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <!-- End of Main element -->
+        <!-- Start of Footer element -->
+        <footer class="MainPageFooter">
+            <p>
+                &copy; <span class="date">2022</span><span class="footer-logo"><img src="./assets/logoCoffee.png"
+                        alt="ModernCoffee"></span>
+                Built by <span class="creator-name"><strong>Alexander Slavov</strong></span>
+            </p>
+        </footer>
+        <!-- End of Footer element -->
+</body>
+
+</html>
