@@ -394,8 +394,62 @@ p {
 .contactFormBTN {
   background-color: var(--secondary);
 }
+.singlePage {
+  display: grid;
+}
+.singlePageInfo > p {
+  color: var(--secondary);
+  text-shadow: 0.5px 0.5px var(--coffeeBrown);
+  letter-spacing: 2.5px;
+}
+.singlePageInfo > h3 {
+  text-shadow: 1px 1px var(--secondary);
+}
+.singlePageInfo {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.singleIMG {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.IconClass {
+  gap: 2rem;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.fa-star {
+  color: orangered;
+}
+.fa-clock {
+  color: var(--secondary);
+}
+
 /* Media Queries */
 @media screen and (min-width: 992px) {
+  .singlePage {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 35rem;
+  }
+  .singleIMG {
+    height: 100%;
+    max-width: 40rem;
+    margin-left: 5rem;
+  }
+  .singlePageInfo {
+    margin-right: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+  .IconClass {
+    grid-template-columns: 1fr 1fr;
+  }
   .aboutPage {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30rem;
