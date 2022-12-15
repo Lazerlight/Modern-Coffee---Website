@@ -14,17 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
-    <style>
-        .MainPageFooter {
-            position: absolute;
-        }
-
-        @media screen and (max-width: 992px) {
-            .MainPageFooter {
-                position: relative;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -51,7 +40,13 @@
                     <a href="./contact.html" class="btn">Contacts</a>
                 </div>
             </div>
-
+            <style>
+                @media screen and (min-width: 992px) {
+                    .MainPageFooter {
+                        display: none;
+                    }
+                }
+            </style>
         </div>
     </nav>
     <!-- End of Nav bar -->
