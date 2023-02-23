@@ -26,7 +26,6 @@
 
 .slider {
   position: relative;
-  width: 9999px;
 }
 .slider:before,
 .slider:after {
